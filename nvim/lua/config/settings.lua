@@ -17,3 +17,12 @@ vim.api.nvim_create_autocmd('BufWinEnter', {
         end
     end,
 })
+
+-- Disable text wrap in md files
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt_local.wrap = false
+    end
+})
+
