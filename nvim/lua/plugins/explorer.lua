@@ -20,4 +20,15 @@ return {
 			})
 		end,
 	},
+    {
+        "stevearc/oil.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" }, -- optional, for icons
+        lazy = false,
+        opts = {
+            default_file_explorer = true, -- replaces netrw, so `nvim .` opens oil
+        },
+        keys = {
+            { "-", "<cmd>Oil<cr>", desc = "Open parent directory" },
+        },
+    }
 }
