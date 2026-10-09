@@ -26,3 +26,6 @@ vim.api.nvim_create_autocmd("FileType", {
     end
 })
 
+-- Keep buffer of eight lines between cursor and end of screen
+vim.opt.scrolloff = 8
+
