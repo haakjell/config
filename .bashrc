@@ -24,6 +24,7 @@ alias sl="sl -l"
 # cd aliases
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # Clear screen with clr
 alias clr="clear"
