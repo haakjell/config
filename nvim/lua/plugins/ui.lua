@@ -44,7 +44,7 @@ return {
 		'petertriho/nvim-scrollbar',
 		cond = not vim.g.vscode,
 		event = 'VeryLazy',
-        branch = 'rafactor/v2',
+        branch = 'v1',
 		opts = function()
 			local hl = vim.api.nvim_get_hl(0, { name = 'CursorLine' })
 			local bg_color = hl.bg and string.format('#%06x', hl.bg) or nil
