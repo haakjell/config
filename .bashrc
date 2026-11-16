@@ -55,9 +55,6 @@ alias st="scoop status"
 # Typo
 alias gti="git"
 
-# sl command (essential)
-alias sl="wsl sl -l"
-
 # Copy tree to clipboard
 alias tree="wsl tree --gitignore | iconv -f utf-8 -t utf-16le | clip"
 
