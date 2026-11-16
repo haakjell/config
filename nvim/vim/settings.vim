@@ -4,8 +4,8 @@
 
 " Main settings
 "
-" Set background shell to use (only on Windows)
-set shell=cmd.exe
+" " Set background shell to use (only on Windows)
+"set shell=cmd.exe
 " Map leader key
 let mapleader = 'ø'
 let maplocalleader = ','
