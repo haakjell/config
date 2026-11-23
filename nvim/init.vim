@@ -13,6 +13,8 @@ source <sfile>:h/vim/keymaps.vim
 source <sfile>:h/vim/autocmds.vim
 " Commands
 source <sfile>:h/vim/commands.vim
+" Clipboard
+source <sfile>:h/vim/clipboard.vim
 
 " Lua config
 "

@@ -9,8 +9,6 @@
 " Map leader key
 let mapleader = 'ø'
 let maplocalleader = ','
-" Use system clipboard
-set clipboard=unnamedplus
 " Show line numbers (how is this not default on)
 set number
 " Use relative numbering style
