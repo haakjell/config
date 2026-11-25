@@ -3,6 +3,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     branch = "main",
     lazy = false, -- main does not support lazy-loading
+    cond = not vim.g.vscode,
     build = ":TSUpdate",
     config = function()
       require("nvim-treesitter").install({ "lua", "markdown", "markdown_inline", "vim", "vimdoc", "c_sharp" })
