@@ -1,0 +1,16 @@
+[tools]
+neovim = "latest"
+"aqua:tree-sitter/tree-sitter" = "latest"
+starship = "latest"
+bun = "latest"
+node = "lts"
+gh = "latest"
+ripgrep = "latest"
+fd = "latest"
+bat = "latest"
+fzf = "latest"
+"aqua:gokcehan/lf" = "latest"
+jq = "latest"
+btop = "latest"
+tealdeer = "latest"
+
