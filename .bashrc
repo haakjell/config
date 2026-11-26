@@ -20,12 +20,15 @@ export PS1='\[\e[36m\]\A\[\e[m\] \[\e[32m\]hakon\[\e[m\] \[\e[37m\]\W\[\e[m\] \[
 # export PS1='\[\e[36m\]\A\[\e[m\] \[\e[38;5;178m\]WSL\[\e[m\] \[\e[37m\]\W\[\e[m\] \[\e[36m\]\$\[\e[m\] '
 
 
+# Configure Starship
+#
+# Prompt (must come before gpin)
+command -v starship >/dev/null && eval "$(starship init bash)"
+
 # Configure gpin
 #
 # Repo root, wherever it's cloned (follows symlinks)
 CONFIG_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-# Prompt (must come before gpin)
-command -v starship >/dev/null && eval "$(starship init bash)"
 # Add gpin
 [ -f "$CONFIG_DIR/bash/gpin.sh" ] && source "$CONFIG_DIR/bash/gpin.sh"
 
@@ -65,4 +68,13 @@ alias rem="scoop uninstall"
 alias upd="scoop update"
 alias search="scoop search"
 alias st="scoop status"
+
+# Mise package manager
+alias mins="mise use -g"
+alias mrem="mise unuse -g"
+alias mupg="mise upgrade"
+alias mls="mise ls"
+alias mout="mise outdated"
+alias mprune="mise prune"
+alias msearch="mise registry | rg"
 
